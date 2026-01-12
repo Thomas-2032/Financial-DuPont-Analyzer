@@ -25,7 +25,7 @@ class DuPontAnalyzer:
         total_assets = self.balance_sheet.loc['Total Assets'].iloc[0]
         total_equity = self.balance_sheet.loc['Stockholders Equity'].iloc[0]
 
-        # 杜邦三率
+        # 杜邦分析計算
         net_profit_margin = net_income / revenue
         asset_turnover = revenue / total_assets
         equity_multiplier = total_assets / total_equity

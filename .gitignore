@@ -4,22 +4,6 @@ __pycache__/
 *$py.class
 *.so
 .Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 
 # --- 虛擬環境 ---
 venv/
@@ -30,8 +14,13 @@ ENV/
 .vscode/
 .idea/
 
-# --- 數據與暫存檔 ---
-*.csv
-*.xlsx
+# --- 數據與結果 (資管專案建議增加) ---
+# 忽略任何抓取下來的暫存數據，確保專案乾淨
+data/*.csv
+data/*.xlsx
+# 忽略自動生成的分析圖表與日誌
+plots/
 *.log
+# 忽略系統縮圖檔
 .DS_Store
+Thumbs.db

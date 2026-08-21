@@ -25,3 +25,12 @@ output/
 # 忽略系統縮圖檔
 .DS_Store
 Thumbs.db
+
+*.egg-info/
+
+# --- 測試與程式碼品質工具 ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
